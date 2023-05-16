@@ -1,9 +1,16 @@
 tasks = {}
+def table_of_tasks(tasks2):
+    tasks2={}
+    tasks= tasks2
+    for key, value in tasks2.items():
+        print(f'{key: <10}{value}')
+table_of_tasks()
+
 def to_do():
     x = input("What is the task? ")
-    y = input("What is the deadline? ")
+    y = input("what is the date of this task? ")
     tasks[x] = y
-    print(tasks)
+
 
 to_do()
 def to_do2():
@@ -15,6 +22,20 @@ def to_do2():
         print("That's all for now")
 
 to_do2()
+
+def list_of_tasks():
+    l= input("Do you want to see all tasks? Yes or No ")
+    if l == "Yes":
+        table_of_tasks()
+
+    else:
+        print("Bye")
+
+list_of_tasks()
+
+
+
+
 
 
 
