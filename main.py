@@ -11,7 +11,6 @@ def to_do():
     y = input("what is the date of this task? ")
     tasks[x] = y
 
-
 to_do()
 
 
@@ -34,5 +33,11 @@ def list_of_tasks():
     else:
         print("bye")
 
-
 list_of_tasks()
+
+def complited():
+    a = input("which task did you complete? ")
+    b = input("From which day? ")
+    task2 = tasks[a] = (b) + (" - completed")
+    list()
+complited()
