@@ -11,6 +11,7 @@ def to_do():
     y = input("what is the date of this task? ")
     tasks[x] = y
 
+
 to_do()
 
 
@@ -22,7 +23,7 @@ def to_do2():
     elif z == "no":
         print("That's all for now")
     else:
-        print("\nThat is incorrect, please try again.\n")
+        print("That is incorrect, please try again.")
 
 
 to_do2()
@@ -33,11 +34,13 @@ def list_of_tasks():
     if l == "yes":
         list()
     elif l == "no":
-        print("bye")
+        print("Good luck with your tasks!")
     else:
-        print("\nThat is incorrect, please try again.\n")
+        print("That is incorrect, please try again.")
+
 
 list_of_tasks()
+
 
 def complited():
     a = input("which task did you complete? ").lower()
@@ -50,4 +53,16 @@ def complited():
         list()
         print("See you soon!")
 
-complited()
+
+def completed_tasks():
+    d = input("Did you complete any task? yes or no ").lower()
+    if d == "yes":
+        complited()
+    elif d == "no":
+        print("See you soon!")
+    else:
+        print("That is incorrect, please try again.")
+
+
+completed_tasks()
+
